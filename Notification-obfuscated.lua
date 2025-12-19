@@ -1,4 +1,3 @@
---open source开源
 local gethui = gethui or function()
     return cloneref(game:GetService("CoreGui"))
 end
@@ -73,8 +72,8 @@ function Nofitication:Notify(settings)
 
     Window.Name = "Window"
     Window.Parent = ambientShadow
-    Window.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-    Window.BackgroundTransparency = 0.1
+    Window.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+    Window.BackgroundTransparency = 0.7
     Window.BorderSizePixel = 0
     Window.Position = UDim2.new(0, 5, 0, 5)
     Window.Size = UDim2.new(0, 230, 0, 80)
@@ -135,7 +134,7 @@ function Nofitication:Notify(settings)
         ImageButton.ZIndex = 5
         ImageButton.AutoButtonColor = false
         ImageButton.Image = settings.Image
-        ImageButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
+        ImageButton.ImageColor3 = Color3.fromRGB(255, 0, 0)
 
         Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", settings.Time)
         task.wait(settings.Time)
